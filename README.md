@@ -67,7 +67,7 @@ When you run the game:
 - **EXIT_COMMANDS**:  
   A list of strings: `["exit", "quit", "q", "ESC"]`. You can type any of these at any input prompt to quit the game immediately.
 
-### Local Variables (inside functions)
+### Local Variables
 
 - **score** (in `play()`):  
   The player's current score, starts at 0.
