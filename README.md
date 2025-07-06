@@ -5,6 +5,26 @@ You guess the song title from an artist and a set of initials. You get two chanc
 
 ---
 
+## Table of Contents
+
+- [Game Overview](#game-overview)
+- [Modules and Libraries Used](#modules-and-libraries-used)
+- [Functions Defined](#functions-defined)
+- [Variables and Constants](#variables-and-constants)
+- [Code Block-by-Block Explanation](#code-block-by-block-explanation)
+  - [Import](#import)
+  - [SONGS List](#songs-list)
+  - [EXIT_COMMANDS List](#exit_commands-list)
+  - [get_initials() Function](#get_initials-function)
+  - [get_user_guess() Function](#get_user_guess-function)
+  - [play() Function (Main Game Logic)](#play-function-main-game-logic)
+  - [Game Start](#game-start)
+- [Summary](#summary)
+- [Customisation](#customisation)
+- [License](#license)
+
+---
+
 ## Game Overview
 
 When you run the game:
@@ -12,7 +32,7 @@ When you run the game:
 - Your goal is to type the correct song name. You have two tries for each song.
 - If you get it right on the first try, you earn 3 points. If you get it right on the second try, you earn 1 point.
 - If you get it wrong twice, the game ends and the correct answer is shown.
-- You can exit at any time by typing certain commands (like `exit` or `q`).
+- You can exit at any time by typing certain commands (like `exit` or `quit`).
 - Your score is displayed after each round and at the end of the game.
 
 ---
@@ -47,7 +67,7 @@ When you run the game:
 - **EXIT_COMMANDS**:  
   A list of strings: `["exit", "quit", "q", "ESC"]`. You can type any of these at any input prompt to quit the game immediately.
 
-### Local Variables
+### Local Variables (inside functions)
 
 - **score** (in `play()`):  
   The player's current score, starts at 0.
@@ -76,7 +96,7 @@ When you run the game:
 ```python
 import random
 ```
-- Imports the `random` module, allowing for random selection.
+- Imports the `random` module, allowing the game to select songs randomly.
 
 ---
 
@@ -244,7 +264,7 @@ play()
 
 ---
 
-## Summary (Plain English)
+## Summary
 
 - The computer picks a random song, shows you the artist and the initials of the song title, and waits for your answer.
 - You get two chances for each song. Points are awarded based on how quickly you guess correctly.
@@ -253,7 +273,7 @@ play()
 
 ---
 
-## Customization
+## Customisation
 
 - Add more songs to the `SONGS` list to increase the game's variety.
 - Change the exit words in `EXIT_COMMANDS` if you want different commands to quit.
@@ -261,4 +281,6 @@ play()
 
 ---
 
+## [License](LICENSE)
 
+See the [LICENSE](LICENSE) file for copyright and usage restrictions.
